@@ -33,7 +33,7 @@
                         <img src="images\jane-m.jpg" alt="avatar" class="avatar">
                     </div>
                     <div class="user-body">
-                        <h1>Jane Doe</h1>
+                        <h1 id="name">Jane Doe</h1>
                         <div class="map">
                             <img src="icons\map-marker.png" alt="map-marker" class="map">
                             <p>Seattle</p>
@@ -43,7 +43,7 @@
                             Master of shadows and the Internet!</p>
                         </div>
                         <div class="gear">
-                            <img src="icons\gear.png" alt="gear" class="gear1"><a href="#" class="edit-profile">edit profile</a>
+                            <img src="icons\gear.png" alt="gear" class="gear1"><a href="#" class="edit-profile" onclick="changeName('#name')">edit profile</a>
                         </div>
                     </div>
                 </div>
@@ -67,8 +67,8 @@
                 <div class="cr-body">
                     <div class="todd">
                         <img src="images\todd-s.jpg" alt="todd-e" class="todd-e"><span>Todd E</span>
-                        <img src="icons\accept-circle.png" alt="accept" class="accept">
-                        <img src="icons\close-circle.png" alt="close" class="close">
+                        <img src="icons\accept-circle.png" alt="accept" class="accept" onclick="hide('.todd-e')">
+                        <img src="icons\close-circle.png" alt="close" class="close" onclick="hide('.todd-e')">
                     </div>
                     <div class="phil">
                         <img src="images\phil-s.jpg" alt="phil-k" class="phil-k"><span>Phil K</span>
@@ -95,7 +95,7 @@
                             <img src="images\arry-s.jpg" alt="arry-y" class="arry-y"><span>Arry Y</span>
                         </div>
                         <div class="view">
-                            <a href="#" class="view">View More</a>
+                            <a href="#" class="view1">View More</a>
                         </div>
                     </div>
                 </div>
@@ -104,5 +104,6 @@
         </div>
     </div>
 </div>
+<script src="script.js"></script>
 </body>
 </html>
